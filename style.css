@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    /*font-family: "Sen", sans-serif;
+    border: solid 1px black;*/
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #fff3f3;
+    background-image: url(/Images/headerBack1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: calc(var(--headerWidth));
+    padding-top: 2vw;
+}
+
+.brand {
+    margin: 0vw 35vw;
+    margin-bottom: 2vw;
+    font-family: "Sen", sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.277);
+    text-align: center;
+    display: block;
+}
+
+.navbar {
+    margin-bottom: 6vw;
+}
+
+.navpages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.277);
+    font-size: 1.8vw;
+    width: 15vw;
+    text-align: center;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header>h1 {
+    color: white;
+    font-family: "Sen", sans-serif;
+    font-size: 6vw;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+header>p {
+    color: white;
+    font-size: 1.8vw;
+    font-weight: 800;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    margin-left: 5vw;
+}
+
+.headerAsesoria {
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.745);
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin-left: 5vw;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/*
+.header.home {
+    background-image: url(/Images/headerBack1.jpeg);
+    background-size: 100%;
+}
+
+.header {
+    color: white; 
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    width: 35%;
+    align-self: center;
+    font-family: "Sen", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navpages {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.206);
+    border-radius: 5px;
+}

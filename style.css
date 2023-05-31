@@ -14,7 +14,7 @@ body {
 
 .header {
     background-color: #fff3f3;
-    background-image: url(/Images/headerBack1.jpeg);
+    background-image: url(Images/headerBack1.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: calc(var(--headerWidth));

@@ -1,65 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 * {
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    /*font-family: "Sen", sans-serif;
-    border: solid 1px black;*/
-    font-family: "Montserrat", sans-serif;
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.549);*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-    margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-.header {
-    background-color: #fff3f3;
-    background-image: url(Images/headerBack1.JPG);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: calc(var(--headerWidth));
-}
-
-.brand {
-    margin: 0vw 35vw;
-    margin-bottom: 2vw;
-    font-family: "Sen", sans-serif;
-    font-size: 4vw;
-    font-weight: 500;
-    color: white;
-    margin-top: 2vw;
-    text-align: center;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.277);
-}
-
-.navbar {
-    margin-bottom: 6vw;
-}
-
-.navpages {
-    display: flex;
-    justify-content: space-around;
-}
-
-.navLink {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.277);
-    font-size: 1.8vw;
-    width: 15vw;
-    text-align: center;
-    padding: 6px 20px;
-    border-radius: 8px;
-}
-
-.navLink:hover {
-    background-color: rgba(255, 255, 255, 0.458);
-    color: black;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
 li {
@@ -68,152 +28,439 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
-header>h1 {
-    color: white;
-    font-family: "Sen", sans-serif;
-    font-size: 6vw;
-    font-weight: 500;
-    margin: 0;
-    margin-left: 5vw;
-    letter-spacing: 10px;
+input, button, textarea, select {
+  font: inherit;
 }
 
-header>p {
-    color: white;
-    font-size: 1.8vw;
-    font-weight: 800;
-    margin-top: 4vw;
-    margin-bottom: 2vw;
-    margin-left: 5vw;
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
-button {
-    text-decoration: none;
-    font-size: 1.8vw;
-    border-radius: 15px;
+#root, #__next {
+  isolation: isolate;
 }
 
-.headerButton {
-    background-color: rgba(255, 255, 255, 0.745);
-    margin-left: 5vw;
-    border: none;
-    padding: 10px 20px;
+/*Style Reset*/
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.headerButton:hover {
-    background-color: rgba(255, 255, 255, 0.882);
-}
-
-main>.pinkBanner {
-    display: flex;
-    flex-direction: column;
+.header {
     background-color: #fff3f3;
-    align-items: center;
-}
-
-h2 {
-    font-size: 2.5vw;
-}
-
-h3 {
-    font-size: 1.8vw;
-    margin: 5px;
-}
-
-main>div>p {
-    font-size: 1.5vw;
-    margin: 0;
-}
-
-.bannerButton1 {
-    background-color: white;
-    margin: 2vw;
-    padding: 5px 50px;
-    border: 1px solid rgb(255, 170, 184);
-}
-
-.bannerButton1:hover {
-    background-color: rgb(255, 144, 162);
-    color: white;
-}
-
-.whiteBanner {
-    display: flex;
-    padding: 4.5vw;
-    gap: 4vw;
-}
-
-.homeBride {
-    width: 18vw;
-}
-
-.whiteBannerChild {
+    height: calc(var(--headerHeight));
+    background-image: url(Images/headerBack1.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.bannerButton2 {
-    background-color: white;
-    margin: 2vw;
-    padding: 5px 50px;
-    border: 1px solid rgb(255, 170, 184);
-}
+    .logoTop {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
 
-.bannerButton2:hover {
-    background-color: rgb(255, 144, 162);
-    color: white;
-}
+        .linkLogoTop {
+            width: 25%
+        }
 
-.testimonios {
-    background-color: #fff3f3;
-    text-align: center;
-    padding: 4vw;
-}
+        #logoImg {
+            display: block;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: all 0.5s;
+        }
 
-.reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3vw;
-    gap: 2vw;
-    font-size: 2vw;
-}
+        #logoImg:hover {
+            transform: scale(1.2);
+        }
 
-.reviewsLink {
-    width: 30vw;
-    height: 30vw;
-    background-color: gray;
-}
+        #menuButton {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            width: 8vw;
+            display: none;
+        }
+
+        .navigationBarUl {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .navigationLink {
+            display:inline-block;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            width: 20vw;
+            padding: 5px 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 24px;
+            transition: all 0.5s;
+        }
+
+        .navigationLink:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+
+    .hero {
+        flex-grow: 1;
+        padding: 2vw 6vw 3vw 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        .heroTitleContainer {
+            margin: 1vw 0;
+        }
+
+        .heroTitle {
+            font-size: 6vw;
+            letter-spacing: 10px;
+            color: white;
+        }
+
+        .heroSubtitleContainer {
+            display: flex;
+        }
+
+        #heroSubtitle {
+            font-size: 2vw;
+            margin: 1vw 0;
+            color: white;
+        }
+
+        #line {
+            width: 12vw;
+            height: 0px;
+            border: 1px solid white;
+            margin: auto 5px;
+        }
+
+        .heroLink {
+            display:inline-block;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 0.3vw 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 2vw;
+            transition: all 0.3s;
+        }
+
+        .heroLink:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.1);
+        }
+
+/*main*/
+
+    .pinkBanner {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff3f3;
+        align-items: center;
+        padding: 3vw;
+    }
+
+        .pinkBannerTitle {
+            font-size: 3vw;
+            margin-bottom: 2vw;
+        }
+
+        .pinkBannerSubtitle {
+            font-size: 2vw;
+        }
+
+        .pinkBannerParagraph {
+            font-size: 1.6vw;
+        }
+
+        .pinkBannerButton {
+            background-color: white;
+            border: 1px solid rgb(255, 170, 184);
+            border-radius: 15px;
+            font-size: 2vw;
+            padding: 2px 6vw;     
+            margin-top: 2vw;  
+            transition: all 0.3s;     
+        }
+
+        .pinkBannerButton:hover {
+            background-color: rgb(255, 144, 162);
+            color: white;
+            transform: scale(1.1);
+        }
+
+    .whiteBanner{
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw;
+
+    }
+        .homeBrideContainer{
+            display: flex;
+            min-width: 50%;
+            justify-content: space-around;
+        }
+
+        .homeBrideImg {
+            width: 18vw;
+        }
+
+        .whiteBannerChild {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #whiteBannerTitle {
+            font-size: 2.8vw;
+            margin-bottom: 2vw;
+        }
+
+        #whiteBannerSubtitle {
+            font-size: 2vw;
+        }
+
+        #whiteBannerButton {
+            background-color: white;
+            border: 1px solid rgb(255, 170, 184);
+            border-radius: 15px;
+            font-size: 2vw;
+            padding: 2px 3vw;     
+            margin-top: 2vw;  
+            transition: all 0.3s;     
+        }
+
+        #whiteBannerButton:hover {
+            background-color: rgb(255, 144, 162);
+            color: white;
+            transform: scale(1.1);
+        }
+
+    #testimonios {
+        font-size: 3vw;
+        background-color: #fff3f3;
+        text-align: center;
+        padding: 4vw;
+    }
+
+    .bannerReviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw;
+        gap: 2vw;
+        font-size: 2vw;
+    }
+
+        .reviewsLink {
+            width: 30vw;
+            height: 30vw;
+            background-color: gray;
+        }
 
 .footer {
     background-color: #fff3f3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw;
+    padding: 3vw;
+}
+    #footerBrand {
+        min-width: 30%;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .footerSocial {
+        min-width: 30%;
+    }
+
+        #footerSocialText {
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        .socialIcons{
+            display: flex;
+            gap: 1vw;
+            justify-content: center;
+            padding: 1vw 0;
+        }
+
+        .socialIconsLink{
+            width: 3vw;
+            transition: all 0.3s;
+        }
+
+        .socialIconsLink:hover {
+            transform: scale(1.1);
+        }
+
+    .footerContact {
+        min-width: 30%;
+        padding-left: 4vw;
+    }
+
+        .contactInfo {
+            font-size: 1.3vw;
+        }
+
+
+
+@media (max-width: 1085px) {
+    .navigationLink {
+        width: 22vw;
+        font-size: 18px;
+    }
+    }
+
+@media (max-width: 785px) {
+    .header {
+        height: auto;
+        background-size: cover;
+        background-position: right;   
+    }
+
+        .logoTop {
+            justify-content: space-between;
+        }
+
+        .linkLogoTop {
+            width: 150px;
+        }
+
+        #logoImg {
+            object-fit: contain;
+            height: 100%;
+        }
+
+        #menuButton {
+            display: block;
+        }
+        
+        .navigationBarUl, .navigationLink {
+            display: none;
+        }
+
+        .heroTitle {
+            font-size: 30px;
+            letter-spacing: 10px;
+        }
+
+        #heroSubtitle {
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+        .heroLink {
+            padding: 2px 20px;
+            font-size: 16px;
+            align-self: center;
+        }
+
+    /*pinkBanner*/
+
+        .pinkBannerTitle {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .pinkBannerSubtitle {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .pinkBannerParagraph {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .pinkBannerButton {
+            font-size: 16px;
+        }
+
+    .whiteBanner{
+        flex-direction: column;
+        gap: 3vw;
+    }
+        .homeBrideContainer{
+            flex-direction: column;
+            align-items: center;
+            gap: 3vw;
+        }
+
+        .homeBrideImg {
+            width: 70%;
+        }
+
+        .whiteBannerChild {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #whiteBannerTitle {
+            font-size: 20px;
+        }
+
+        #whiteBannerSubtitle {
+            font-size: 16px;
+        }
+
+        #whiteBannerButton {
+            font-size: 16px; 
+        }
+
+    #testimonios {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+        #footerBrand {
+            font-size: 30px;
+        }
+    
+            #footerSocialText {
+                font-size: 18px;
+                margin-top: 3vw;
+            }
+
+            .socialIcons{
+                margin: 3vw;
+                gap: 40px;
+            }
+    
+            .socialIconsLink{
+                width: 20px;
+            }
+    
+        .footerContact {
+            padding: 0;
+        }
+    
+            .contactInfo {
+                font-size: 16px;
+                text-align: center;
+            }
+
 }
 
-.footer>div{
-    width: 30vw;
-}
-
-.footerBrand {
-    font-size: 3vw;
-    font-weight: 800;
-    text-align: center;
-}
-
-.footerAgenda{
-    font-size: 2vw;
-    text-align: center;
-}
-
-.footerContact>p {
-    padding-left: 7vw;
-}

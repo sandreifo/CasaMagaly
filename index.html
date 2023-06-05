@@ -4,71 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Sen:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.1.css">
     <title>Casa Magaly</title>
 </head>
 <body>
-    <header class="header home">
-        <nav class="navbar">
-            <div>.</div>
-            <a href="" class="brand">Casa Magaly</a>
-            <div class="navpages">
-                <a class="navLink" href="">Nuestro Servicio</a>
-                <a class="navLink" href="">Agenda tu cita</a>
-                <a class="navLink" href="">Nuestro Equipo</a>
-                <a class="navLink" href="">Álbum</a>
+
+    <header class="header">
+        <div class="logoTop">
+            <a class="linkLogoTop" href="index.html"><img id="logoImg" src="Logos/casaMagaly.png"></a>
+            <button id="menuButton"><img id="menuImg" src="Logos/menuIcon.png"></button>
+        </div>
+
+        <div class="navigationBarDiv">
+            <nav class="navigationBar">
+                <ul class="navigationBarUl">
+                    <li><a class="navigationLink" href="">Nuestro Servicio</a></li>
+                    <li><a class="navigationLink" href="">Agenda tu cita</a></li>
+                    <li><a class="navigationLink" href="">Nuestro Equipo</a></li>
+                    <li><a class="navigationLink" href="">Álbum</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero">
+            <div class="heroTitleContainer">
+                <h1 class="heroTitle">Casa</h1>
+                <h1 class="heroTitle">Magaly</h1>
             </div>
-        </nav>
-        <h1>Casa</h1>
-        <h1>Magaly</h1>
-        <p>Diseño de alta costura</p>
-        <button class="headerButton">Programa tu asesoría</button>
+            <div class="heroSubtitleContainer">
+                <p id="heroSubtitle">Diseño de alta costura</p>
+                <hr id="line">
+            </div>
+            <div class="heroLinkContainer">
+                <a class="heroLink" href="">Programa tu asesoría</a>
+            </div>
+        </div>
     </header>
+
+
     <main>
         <div class="pinkBanner">
-            <h2>Todo un equipo trabajando para ti</h2>
-            <h3>Nuestro trabajo es hacer realidad ese vestido con el que siempre has soñado</h3>
-            <p>Vestidos en venta según tu diseño soñado, vestido de stock y vestidos en alquiler.</p>
-            <button class="bannerButton1">Nuestro Equipo</button>
+            <h2 class="pinkBannerTitle">Todo un equipo trabajando para ti</h2>
+            <p class="pinkBannerSubtitle">Nuestro trabajo es hacer realidad ese vestido con el que siempre has soñado</p>
+            <p class="pinkBannerParagraph">Vestidos en venta según tu diseño soñado, vestido de stock y vestidos en alquiler.</p>
+            <button class="pinkBannerButton">Nuestro Equipo</button>
         </div>
+
         <div class="whiteBanner">
-            <img class="homeBride" src="Images/homeBride1.jpeg">
-            <img class="homeBride" src="Images/homeBride2.jpeg">
+            <div class="homeBrideContainer">
+                <img class="homeBrideImg" src="Images/homeBride1.jpeg">
+                <img class="homeBrideImg" src="Images/homeBride2.jpeg">
+            </div>
             <div class="whiteBannerChild">
-                <h2>Más de 60 años cumpliendo sueños</h2>
-                <h3>Moda, bodas llenas de amor, vestidos de cientos de colores, clientas felices, mucho estilo y telas únicas</h3>
-                <button class="bannerButton2">Conoce nuestro Álbum</button>
+                <h2 id="whiteBannerTitle">Más de 60 años cumpliendo sueños</h2>
+                <p id="whiteBannerSubtitle">Moda, bodas llenas de amor, vestidos de cientos de colores, clientas felices, mucho estilo y telas únicas</p>
+                <button id="whiteBannerButton">Conoce nuestro Álbum</button>
             </div>
         </div>
-        <div>
-            <h2 class="testimonios">Testimonios que hablan por sí solos</h2>
+
+        <div class="bannerTestimonios">
+            <h2 id="testimonios">Testimonios que hablan por sí solos</h2>
         </div>
-        <div class="reviews">
+
+        <div class="bannerReviews">
             <div>REVIEWS</div>
             <div class="reviewsLink"></div>
         </div>
     </main>
+
+
     <footer class="footer">
-        <div class="footerBrand">Casa Magaly</div>
-        <div>
-            <p class="footerAgenda">¡Agenda tu cita!</p>
-            <img src="">
-            <img src="">
-            <img src="">
+        <h2 id="footerBrand">Casa Magaly</h2>
+
+        <div class="footerSocial">
+            <p id="footerSocialText">¡Agenda tu cita!</p>
+            <div class="socialIcons">
+                <a class="socialIconsLink" href=""><img class="socialIconsImg" src="Logos/logoInstagram.png"></a>
+                <a class="socialIconsLink" href=""><img class="socialIconsImg" src="Logos/logoFacebook.png"></a>
+                <a class="socialIconsLink" href=""><img class="socialIconsImg" src="Logos/logoWhatsapp.png"></a>
+            </div>
         </div>
+
         <div class="footerContact">
-            <p>Avenida 15 # 119 - 52, Bogotá.</p>
-            <p>+57 310 304 3345</p>
-            <p>Horario:</p>
-            <p>L-S 10:00 - 19:00</p>
-            <p>casa_magaly@hotmail.com</p>
-            <p>moralesrossmary@hotmail.com</p>
+            <p class="contactInfo">Avenida 15 # 119 - 52, Bogotá.</p>
+            <p class="contactInfo">+57 310 304 3345</p>
+            <p class="contactInfo">Horario: L-S 10:00 - 19:00</p>
+            <p class="contactInfo">casa_magaly@hotmail.com</p>
+            <p class="contactInfo">moralesrossmary@hotmail.com</p>
         </div>
     </footer>
 

@@ -111,6 +111,7 @@ p, h1, h2, h3, h4, h5, h6 {
             background-color: rgba(0, 0, 0, 0.3);
             padding: 5px;
             width: 8vw;
+            height: 8vw;
             display: none;
         }
 
@@ -419,9 +420,30 @@ p, h1, h2, h3, h4, h5, h6 {
         #menuButton {
             display: block;
         }
+
+        .navigationBar {
+            display: flex;
+            justify-content: center;
+        }
         
-        .navigationBarUl, .navigationLink {
+        .navigationBarUl {
             display: none;
+        }
+
+        .navigationBarUlResponsive {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4vw;
+            width: 90%;
+            padding: 4vw 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            
+        }
+
+        .navigationLink {
+            width: auto;
         }
 
         .heroTitle {

@@ -51,12 +51,39 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
     background-color: #fff3f3;
     height: calc(var(--headerHeight));
-    background-image: url(Images/headerBack1.JPG);
-    background-size: 100%;
-    background-repeat: no-repeat;
     padding: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.header.main {
+    background-image: url(Images/headerBack1.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header.agenda {
+    background-image: url(Images/headerBackAgenda.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header.equipo {
+    background-image: url(Images/headerBackEquipo.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header.servicio {
+    background-image: url(Images/headerBackServicio.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header.album {
+    background-image: url(Images/headerBackAlbum.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
     .logoTop {
@@ -128,6 +155,20 @@ p, h1, h2, h3, h4, h5, h6 {
             color: white;
         }
 
+        #heroTitleSubPage {
+            font-size: 5.3vw;
+            text-align: center;
+            padding: 2vw 0;
+            color: white;
+        }
+
+        #heroTitleSubPageEquipo {
+            font-size: 5.3vw;
+            text-align: left;
+            padding: 2vw 0 0 0;
+            color: white;
+        }
+
         .heroSubtitleContainer {
             display: flex;
         }
@@ -154,6 +195,11 @@ p, h1, h2, h3, h4, h5, h6 {
             text-align: center;
             font-size: 2vw;
             transition: all 0.3s;
+        }
+
+        .heroLinkContainerSubpage {
+            display: flex;
+            justify-content: center;
         }
 
         .heroLink:hover {
@@ -329,9 +375,32 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 785px) {
     .header {
-        height: auto;
+        height: auto;  
+    }
+
+    .header.main {
         background-size: cover;
-        background-position: right;   
+        background-position: right; 
+    }
+    
+    .header.agenda {
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    .header.equipo {
+        background-size: cover;
+        background-position: right; 
+    }
+    
+    .header.servicio {
+        background-size: cover;
+        background-position: right; 
+    }
+    
+    .header.album {
+        background-size: cover;
+        background-position: center; 
     }
 
         .logoTop {
@@ -358,6 +427,14 @@ p, h1, h2, h3, h4, h5, h6 {
         .heroTitle {
             font-size: 30px;
             letter-spacing: 10px;
+        }
+
+        #heroTitleSubPage {
+            font-size: 30px;
+        }
+
+        #heroTitleSubPageEquipo {
+            font-size: 30px;
         }
 
         #heroSubtitle {

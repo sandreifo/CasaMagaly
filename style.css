@@ -383,6 +383,81 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 2vw;
     }
 
+    /* Agenda */
+
+    .agendaSeccionUno {
+        background-color: #fff3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw;
+        text-align: center;
+    }
+
+    #agendaSeccionUnoTitulo {
+        font-size: 3vw;
+    }
+
+    #agendaSeccionUnoParrafo {
+        font-size: 2vw;
+    }
+
+    .agendaSeccionDos {
+        padding: 4vw 10vw;
+    }
+
+    #agendaForm {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw
+    }
+
+    label{
+        display: none;
+    }
+
+    .formDiv {
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .formInput {
+        border: solid 1px black;
+        padding: 1vw;
+        flex: 1 1 0;
+    }
+
+    #fMensaje {
+        border: solid 1px black;
+        padding: 1vw;
+    }
+
+    .formDivInput {
+        flex: 1 1 0;
+        display: flex;
+    }
+
+    #fButton {
+        background-color: white;
+        border: 1px solid rgb(255, 170, 184);
+        border-radius: 15px;
+        font-size: 2vw;
+        padding: 2px 3vw;     
+        margin-top: 2vw;
+        width: 30%;  
+        transition: all 0.3s;  
+        align-self: center;   
+    }
+
+    #fButton:hover {
+        background-color: rgb(255, 144, 162);
+        color: white;
+        transform: scale(1.1);
+    }
+    
+
 .footer {
     background-color: #fff3f3;
     display: flex;
@@ -623,9 +698,17 @@ p, h1, h2, h3, h4, h5, h6 {
         width: 80%;
     }
 
+    #servicioTresImgId {
+        order: 1;
+    }
+
     .servicioTresTexto {
         width: 90%;
         
+    }
+
+    #servicioTresTextoId {
+        order: 2;
     }
 
     .servicioTresTitulo {
@@ -633,6 +716,24 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .servicioTresParrafo{
+        font-size: 16px;
+    }
+
+    /* Agenda */
+
+    #agendaSeccionUnoTitulo {
+        font-size: 20px;
+    }
+
+    #agendaSeccionUnoParrafo {
+        font-size: 16px;
+    }
+
+    .formDiv {
+        flex-direction: column;
+    }
+
+    #fButton {
         font-size: 16px;
     }
 

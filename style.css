@@ -318,6 +318,71 @@ p, h1, h2, h3, h4, h5, h6 {
             background-color: gray;
         }
 
+    .servicioSectionUno {
+        display: flex;
+        justify-content: space-around;
+        padding: 3vw;
+
+    }
+
+    .seccionUnoIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+    }
+
+    .seccionUnoIconImg{
+        width: 10vw;
+    }
+
+    .seccionUnoText {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .servicioSectionDos {
+        background-color: #fff3f3;
+        padding: 4vw 10vw;
+    }
+
+    .servicioSeccionDosText {
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .servicioSectionTres {
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+        gap: 5vw;
+    }
+
+    .servicioTresDivision {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .servicioTresImg {
+        width: 40%;
+    }
+
+    .servicioTresTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 55%;
+    }
+
+    .servicioTresTitulo {
+        font-size: 3vw;
+    }
+
+    .servicioTresParrafo{
+        font-size: 2vw;
+    }
+
 .footer {
     background-color: #fff3f3;
     display: flex;
@@ -439,7 +504,7 @@ p, h1, h2, h3, h4, h5, h6 {
             width: 90%;
             padding: 4vw 0;
             background-color: rgba(0, 0, 0, 0.8);
-            
+            border-radius: 15px;
         }
 
         .navigationLink {
@@ -528,6 +593,47 @@ p, h1, h2, h3, h4, h5, h6 {
 
     #testimonios {
         font-size: 20px;
+    }
+
+    .servicioSectionUno {
+       flex-direction: column;
+       align-items: center;
+       gap: 10px;
+    }
+
+    .seccionUnoIcon, .seccionUnoIconImg {
+        width: 50%;
+    }
+
+    .seccionUnoText {
+        font-size:  18px;
+    }
+
+    .servicioSeccionDosText {
+        font-size: 18px;
+    }
+
+    .servicioTresDivision {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .servicioTresImg {
+        width: 80%;
+    }
+
+    .servicioTresTexto {
+        width: 90%;
+        
+    }
+
+    .servicioTresTitulo {
+        font-size: 20px;
+    }
+
+    .servicioTresParrafo{
+        font-size: 16px;
     }
 
     .footer {

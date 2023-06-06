@@ -457,6 +457,51 @@ p, h1, h2, h3, h4, h5, h6 {
         transform: scale(1.1);
     }
     
+    /* Equipo */
+
+    .equipoContainer {
+        display: flex; 
+        padding: 5vw;
+        gap: 5vw;
+    }
+
+    #equipoImg {
+        width: 40%;
+    }
+
+    .equipoTexto {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #equipoTitulo {
+        font-size: 3vw;
+    }
+
+    .equipoParrafo {
+        font-size: 2vw;
+    }
+
+    /* Equipo */
+    #albumContainer{
+        display: flex;
+        padding: 5vw;
+        gap: 2vw;
+    }
+
+    .albumRow{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        width: 33.33%;
+    }
+
+    .albumImg {
+        width: 100%;
+    }
 
 .footer {
     background-color: #fff3f3;
@@ -737,6 +782,42 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
     }
 
+    /* Equipo */
+
+    .equipoContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #equipoImg {
+        width: 80%;
+    }
+
+    .equipoTexto {
+        width: 90%;
+    }
+
+    #equipoTitulo {
+        font-size: 20px;
+    }
+
+    .equipoParrafo {
+        font-size: 16px;
+    }
+
+    /* Equipo */
+    #albumContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .albumRow{
+        width: 90%;
+    }
+
+    /* footer */
+
     .footer {
         flex-direction: column;
     }
@@ -752,7 +833,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
             .socialIcons{
                 margin: 3vw;
-                gap: 40px;
+                gap: 30px;
             }
     
             .socialIconsLink{

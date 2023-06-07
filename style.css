@@ -585,8 +585,6 @@ p, h1, h2, h3, h4, h5, h6 {
             color: black;
         }
 
-
-
 @media (max-width: 1085px) {
     .navigationLink {
         width: 22vw;

@@ -9,6 +9,6 @@ document.querySelector("#menuButton").addEventListener("click", function() {
 let formulario = document.getElementById("agendaForm");
 if (formulario != null) {
 formulario.addEventListener('submit', function(e) {
-    alert("Gracias por contactarnos, pronto recibiras nuestra respuesta.");
+    alert("Gracias por contactarnos, pronto nos comunicaremos contigo.");
 })}
 else {}

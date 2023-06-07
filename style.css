@@ -344,11 +344,9 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 2vw;
     }
 
-        .reviewsLink {
-            width: 30vw;
-            height: 30vw;
-            background-color: gray;
-        }
+    #bannerReviewsText {
+        font-size: 2vw;
+    }
 
     .servicioSectionUno {
         display: flex;
@@ -695,6 +693,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
         #floatingWhatsAppImg {
             height: 30px;
+        }
+
+        #bannerReviewsText {
+            font-size: 18px;
         }
 
     /*pinkBanner*/

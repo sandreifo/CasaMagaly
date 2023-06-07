@@ -207,6 +207,37 @@ p, h1, h2, h3, h4, h5, h6 {
             background-color: rgba(255, 255, 255, 0.9);
             transform: scale(1.1);
         }
+/*floatingbutton*/
+
+    #floatingWhatsAppLink {
+        position: fixed;
+        background-color: #25d366;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        right: 30px;
+        bottom: 30px;
+        padding: 1vw;
+        gap: 1vw;
+        transition: all 0.5s;
+    }
+    @media (min-width: 786px) {
+        #floatingWhatsAppLink:hover {
+            border-radius: 50px;
+            color: white;
+            font-size: 1.5vw;
+            padding-right: 2vw;
+        }
+    
+        #floatingWhatsAppLink:hover::after{
+            content: "Agenda tu cita aquí";
+        }
+    }
+
+    #floatingWhatsAppImg {
+        height: 3vw;
+    }
 
 /*main*/
 
@@ -653,6 +684,14 @@ p, h1, h2, h3, h4, h5, h6 {
             padding: 2px 20px;
             font-size: 16px;
             align-self: center;
+        }
+
+        #floatingWhatsAppLink {
+            padding: 2vw;
+        }
+
+        #floatingWhatsAppImg {
+            height: 40px;
         }
 
     /*pinkBanner*/

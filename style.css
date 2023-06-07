@@ -688,10 +688,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
         #floatingWhatsAppLink {
             padding: 2vw;
+            right: 15px;
+            bottom: 15px;
         }
 
         #floatingWhatsAppImg {
-            height: 40px;
+            height: 30px;
         }
 
     /*pinkBanner*/

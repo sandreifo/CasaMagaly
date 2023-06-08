@@ -17,7 +17,7 @@ let modal = document.getElementById("modalSlide");
 let slideIndex = 1;
 
 function openModal(n){
-    modal.style.display = "block";
+    modal.style.display = "flex";
     currentSlide(n)
 }
 

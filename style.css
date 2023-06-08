@@ -546,6 +546,8 @@ p, h1, h2, h3, h4, h5, h6 {
         left: 0;
         top: 0;
         overflow: auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .close {
@@ -571,7 +573,6 @@ p, h1, h2, h3, h4, h5, h6 {
         width: auto;
         max-width: 80vw;
         max-height: 90vh;
-        position: absolute;
         margin: auto;
         left: 0;
         right: 0;
@@ -596,6 +597,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .next {
         right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
         border-radius: 3px 0 0 3px;
     }
 
@@ -932,6 +938,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .albumRow{
         width: 90%;
+    }
+
+    .prev, .next {
+        font-size: 18px;
     }
 
     /* footer */
